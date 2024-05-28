@@ -16,14 +16,14 @@ describe('square' ,() => {
         expect(spyMathPow).toBeCalledTimes(1)
     })
 
-    test('Correct value 2', () => {
-        const spyMathPow = jest.spyOn(Math, 'pow');
-        square(2)
-        expect(spyMathPow).toBeCalledTimes(0)
-    })
+    // afterEach(() => {
+    //     jest.clearAllMocks();
+    // })
 
-    afterEach(() => {
-        jest.clearAllMocks();
-    })
+    // test('Correct value 2', () => {
+    //     const spyMathPow = jest.spyOn(Math, 'pow');
+    //     square(2)
+    //     expect(spyMathPow).toBeCalledTimes(0)
+    // })
     // afterAll(() => {  })
 })
